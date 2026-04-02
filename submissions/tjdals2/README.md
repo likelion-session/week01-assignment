@@ -24,4 +24,4 @@ https://github.com/tjdals2/likelion.git
 ![alt text](image-1.png)
 
 실습5
-미진행
+![alt text](image-2.png)
