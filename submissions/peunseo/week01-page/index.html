@@ -1,0 +1,60 @@
+<!doctype html>  <!-- html 문서 버전 판단 역할 -->
+<html lang="ko"> <!-- 웹 페이지 언어 설정 = 한국어 -->
+
+<!-- head: 웹 페이지 정보(메타데이터)를 담는 영역 -->
+<head>  
+    <!-- meta: 웹 페이지의 메타데이터를 정의하는 역할 -->
+    <!-- charset: 문자 인코딩(사람이 읽을 수 있는 데이터를 컴퓨터가 읽도록 변환) 지정 -->
+    <!-- UTF-8: 유니코드 문자 인코딩의 한 형태, 전 세계 표현 가능해서 주로 사용 -->
+    <meta charset="UTF-8">
+    
+    <!-- 웹 페이지 제목 설정 -->
+    <title>박은서를 소개합니다람쥐</title>
+
+    <!-- style: css 영역, 웹 페이지의 스타일(모양과 레이아웃)을 정의 -->
+    <style>
+
+        /* 웹 페이지 전체 틀 = 도화지 느낌 */
+        body {
+            background-color: #f0f0f0; /* 배경색 */
+            text-align: center; /* 제목 중앙 정렬 */
+            padding-top: 80px; /* 페이지 상단 여백 */
+        }
+
+        /* 제목 스타일 설정 */
+        h1 {
+            color: green; /* 제목색 */
+            background-color: white; /* 제목 배경색 */
+            display: inline-block; /* 배경색을 제목 글자만큼 */
+            padding: 10px 20px; /* 제목 상자 안쪽 여백 */
+            border-radius: 10px; /* 모서리를 둥글게 */
+        }
+
+    </style>
+
+</head>
+
+<!-- body: 웹 페이지 실제 콘텐츠 영역 -->
+<body> 
+    <h1>반갑숭구리당당숭당당</h1>
+    <p>이름: 박은서</p>
+    <p>취미: 헬스, 게임, 음악</p>
+
+    <button id="btn">꾸욱</button>
+
+    <!-- 자바 스크립트 영역, 웹 페이지에 동적인 기능 추가 역할 -->
+    <script>
+        // document: 현재 보는 웹 페이지 전체 객체
+        // getElementById: HTML 요소를 id로 선택하는 메서드 (위에 버튼 id="btn")
+        // onclick: 버튼 클릭 이벤트, 함수 실행
+        // alert: 팝업창 메시지
+        // console.log: 브라우저 콘솔에 메시지 출력
+        // new Date().toLocaleString(): 현재 날짜와 시간을 읽기 쉬운 형식으로 반환
+        document.getElementById('btn').onclick = function() {
+            alert("메시지"); // 팝업창 메시지
+            console.log("현재 시간: " + new Date().toLocaleString()); 
+        };
+    </script>
+
+</body>
+</html>
